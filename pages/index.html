@@ -168,7 +168,7 @@
               </div>
             </div>
             <!--New cards-->
-            <div class = "row mb-2">
+            <div class = "row mb-3">
               <span class = "fs-4 text-white">Новинки</span>
             </div>
             <div class="row row-cols-1  row-cols-md-2 row-cols-lg-4 g-4 mb-3">
@@ -241,10 +241,94 @@
                 </div>
                 </div>
               </div>
+            </div>
+            </div>
 
+        
+
+
+        <!--shopping cart-->
+        <div class="shopping-cart">
+          <div class="px-4 px-lg-0">
+              <div class="pb-5">
+                  <div class="container">
+                      <div class = "row mb-2">
+                        <span class = "fs-4 text-white">Корзина</span>
+                      </div>
+                      <div class="row">
+                          <div class="cart-table col-12 p-5 rounded shadow-sm mb-3">
+                              <div class="table-responsive">
+                                  <table class="table">
+                                      <thead>
+                                          <tr class="d-flex">
+                                              <th class="border-0 table-col col-4" scope="col">
+                                                  <div class="p-2 px-3 text-uppercase text-white">Товар</div>
+                                              </th>
+                                              <th class="border-0 table-col text-white col-3" scope="col">
+                                                  <div class="py-2 text-uppercase">Цена</div>
+                                              </th>
+                                              <th class="border-0 table-col text-white col-4" scope="col">
+                                                  <div class="py-2 text-uppercase">Количество</div>
+                                              </th>
+                                              <th class="border-0 table-col text-white col-1" scope="col">
+                                                  <div class="py-2 text-uppercase">Удалить</div>
+                                              </th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <th class="" scope="row">
+                                                  <div class="p-2"><img class="img-fluid rounded shadow-sm" src="/Gametrade/pages/assets/dota_boost_slider.jpg" alt width="70" />
+                                                      <div class="ml-3 d-inline-block align-middle">
+                                                          <h5 class="mb-0 ps-2"><a class="text-white d-inline-block align-middle text-decoration-none">Product Name</a></h5>
+                                                      </div>
+                                                  </div>
+                                              </th>
+                                              <td class="align-middle text-white"><strong>479.00 &#8381;</strong></td>
+                                              <td class="align-middle text-white"><button class = "btn"><i class="fa fa-minus text-white"></i></button><input class = "cart-quantity" type = "text" onkeypress='validate(event)'  value="3"><button class = "btn"><i class="fa fa-plus text-white"></i></button></td>
+                                              <td class="align-middle"><a class="text-white" ><i class="fa fa-trash"></i></a></td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">
+                                                  <div class="p-2"><img class="img-fluid rounded shadow-sm" src="/Gametrade/pages/assets/dota_boost_slider.jpg" alt width="70" />
+                                                      <div class="ml-3 d-inline-block align-middle">
+                                                          <h5 class="mb-0 ps-2"><a class="text-white d-inline-block text-decoration-none">Product Name</a></h5>
+                                                      </div>
+                                                  </div>
+                                              </th>
+                                              <td class="align-middle text-white"><strong>479.00 &#8381;</strong></td>
+                                              <td class="align-middle text-white"><button class = "btn"><i class="fa fa-minus text-white"></i></button><input class = "cart-quantity" type = "text" onkeypress='validate(event)'  value="3"><button class = "btn"><i class="fa fa-plus text-white"></i></button></td>
+                                              <td class="align-middle"><a class="text-white" ><i class="fa fa-trash"></i></a></td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row">
+                                                  <div class="p-2"><img class="img-fluid rounded shadow-sm" src="/Gametrade/pages/assets/dota_boost_slider.jpg" alt width="70" />
+                                                      <div class="ml-3 d-inline-block align-middle">
+                                                          <h5 class="mb-0 ps-2"><a class="text-white d-inline-block text-decoration-none" >Product Name</a></h5>
+                                                      </div>
+                                                  </div>
+                                              </th>
+                                              <td class="align-middle text-white"><strong>479.00 &#8381;</strong></td>
+                                              <td class="align-middle text-white"><button class = "btn"><i class="fa fa-minus text-white"></i></button><input class = "cart-quantity" type = "text" onkeypress='validate(event)'  value="3"><button class = "btn"><i class="fa fa-plus text-white"></i></button></td>
+                                              <td class="align-middle"><a class="text-white" href="#"><i class="fa fa-trash"></i></a></td>
+                                          </tr>
+                                      </tbody>
+                                    </table>
+                              </div>
+                            </div>
+                      </div>
+                      <div class = "row py-3 total-info">
+                          <div class = "col-lg-12 d-flex justify-content-between align-middle">
+                            <div class = "total-cost-info-block d-flex align-items-center">
+                              <strong class="text-white me-2">Total:</strong>
+                              <span class = "total-price text-white">1437 &#8381;</span>
+                            </div>
+                            <button class="btn btn-primary" type="button">Оформить заказ</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
-
 
 
 
@@ -299,6 +383,6 @@
         </div>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
           <script src="https://kit.fontawesome.com/b34a51bf50.js" crossorigin="anonymous"></script>
-          
+          <script src="/Gametrade/scripts/validate.js" ></script>
     </body>
 </html>

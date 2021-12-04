@@ -5,6 +5,7 @@ body{
     --main-dark-color:rgb(42,42,42);
     --unhover-nav-color: rgb(204,204,204);
     --hover-nav-color:rgb(255,255,255);
+    --table-header-color: rgb(65,65,65);
     font-family: 'Ubuntu', sans-serif !important;
     background: var(--main-bg-color) !important;
 }
@@ -213,4 +214,16 @@ body{
 }
 .agreement-text, .about-us-text, .privacy-text{
     word-break: break-word;
+}
+.cart-table{
+    background-color: var(--main-dark-color) !important;
+}
+.table-col{
+    background-color: var(--table-header-color) !important;
+}
+.total-info{
+    background-color: var(--main-dark-color) !important;
+}
+.cart-quantity{
+    width:50px;
 }
