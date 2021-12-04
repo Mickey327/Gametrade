@@ -10,9 +10,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         
-        <title>Gametrade</title>
+        <title>Gametrade | Магазин</title>
     </head>
-    <body>
+    <body class="page-body">
       <!-- navigation block-->
       <div class = "container-fluid navigation bg-dark ">
       <div class = "container-xxl navigation">
@@ -29,7 +29,7 @@
                   <a class = "nav-item nav-link active px-2 fs-5 underlined-text" href="#">Главная</a>
                   <a class = "nav-item nav-link fs-5 px-2 underlined-text" href="catalog.html">Каталог</a>
                   <a class = "nav-item nav-link fs-5 px-2 underlined-text" href="faq.html"> FAQ</a>
-                  <a class="nav-item nav-link  px-2 fs-5 " href="news.html">Новости</a>
+                  
               </div>
             </div>
           </nav>
@@ -38,8 +38,8 @@
       
         <!--search form-->
         <div class = "container-xxl px-2 sticky-top sticky-search">
-          <div class="row mb-3">
-            <div class = "col-md-4 col-12 py-2">
+          <div class="row mb-3 align-items-center">
+            <div class = "col-md-4 col-10 py-2">
               <div class = "searchbar">
                 <input type="text" class="fs-5 search-input" placeholder="Search..." autofocus>
                 <a class="search-icon" href="#">
@@ -47,8 +47,12 @@
                 </a>
               </div>
             </div>
+            <div class = "col-2">
+              <a class="cart-icon text-decoration-none" href ="#cart"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> <span class="fs-6 text-white d-none d-md-inline">К корзине</span></a>
+            </div>
           </div>
         </div>
+
             <!--carousel-->
           <div class = "container-xxl px-2">
             <div class = "row mb-2">
@@ -59,40 +63,40 @@
               <div id="offerCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#offerCarousel" data-bs-slide-to="0" class="active carousel-btn " aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#offerCarousels" data-bs-slide-to="1" class= "carousel-btn" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#offerCarousel" data-bs-slide-to="1" class= "carousel-btn" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#offerCarousel" data-bs-slide-to="2" class="carousel-btn" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="/Gametrade/pages/assets/wow_gold.jpg" class="d-block w-100" alt="Золото World of Warcraft">
+                  <div class="carousel-item active product-info">
+                    <img src="/Gametrade/pages/assets/wow_gold.jpg" class="d-block w-100 product-image" alt="Золото World of Warcraft">
                     <div class="carousel-caption  d-block">
-                      <h5 class="fs-4 align-left">Скидка на золото WoW</h5>
+                      <h5 class="fs-4 align-left product-name">Золото WoW</h5>
                       <p class="fs-5 d-md-block d-none align-left">Теперь вы можете приобрести золото по заниженной цене в честь приближающихся праздников.</p>
                       <div class = "payment-info d-inline">
-                        <button class = "btn btn-primary me-2">Купить</button>
-                        <span class="fs-6 text-white"> <span class="fs-5 text-white"> <span class ="old-cost text-muted me-1">3 &#8381;</span> 2.25 &#8381;</span> / 1000 золота</span>
+                        <button class = "btn btn-primary me-2 add-button">Купить</button>
+                        <span class="fs-6 text-white"> <span class ="fs-5 old-cost text-muted me-1">4 &#8381;</span> <span class="fs-5 text-white price">3 &#8381;</span> / 1000 золота</span>
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item">
-                    <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="d-block w-100" alt="Boost MMR Dota 2">
+                  <div class="carousel-item product-info">
+                    <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="d-block w-100 product-image" alt="Boost MMR Dota 2">
                     <div class="carousel-caption  d-block">
-                      <h5 class="fs-4 align-left">Дешевый буст MMR Dota 2</h5>
+                      <h5 class="fs-4 align-left product-name">Буст MMR Dota 2</h5>
                       <p class="fs-5 d-md-block d-none align-left">Хотите испытать себя на более высоком рейтинге? Покупайте буст по низким ценам.</p>
                       <div class = "payment-info d-inline">
-                          <button class = "btn btn-primary me-2">Купить</button>
-                          <span class="fs-6 text-white"> <span class="fs-5 text-white"> <span class ="old-cost text-muted me-1">350 &#8381;</span> 250 &#8381;</span> / 100 MMR</span>
+                          <button class = "btn btn-primary me-2 add-button">Купить</button>
+                          <span class="fs-6 text-white"> <span class ="fs-5 old-cost text-muted me-1">350 &#8381;</span> <span class="fs-5 text-white price">250 &#8381;</span> / 100 MMR</span>
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item">
-                    <img src="/Gametrade/pages/assets/random_covert_csgo_carousel.jpg" class="d-block w-100" alt="Random Covert Rifle CS:GO">
+                  <div class="carousel-item product-info">
+                    <img src="/Gametrade/pages/assets/random_covert_csgo_carousel.jpg" class="d-block w-100 product-image" alt="Random Covert Rifle CS:GO">
                     <div class="carousel-caption  d-block">
-                      <h5 class="fs-4 align-left">Случайное тайное оружие</h5>
+                      <h5 class="fs-4 align-left product-name">Случайное тайное оружие</h5>
                       <p class="fs-5 d-md-block d-none align-left">Хотите посмотреть насколько вы везунчик? Испытайте свою удачу, купив тайное оружие по низкой цене.</p>
                       <div class = "payment-info d-inline">
-                        <button class = "btn btn-primary me-2">Купить</button>
-                        <span class="fs-6 text-white"> <span class="fs-5 text-white"> <span class ="old-cost text-muted me-1">599 &#8381;</span> 459 &#8381;</span> / 1 шт.</span>
+                        <button class = "btn btn-primary me-2 add-button">Купить</button>
+                        <span class="fs-6 text-white"> <span class ="fs-5 old-cost text-muted me-1">599 &#8381;</span> <span class="fs-5 text-white price">459 &#8381;</span> / 1 шт.</span>
                       </div>
                     </div>
                   </div>
@@ -114,54 +118,54 @@
             <!--cards popular-->
           <div class="row row-cols-1  row-cols-md-2 row-cols-lg-4 g-4 mb-3">
             <div class="col">
-              <div class="card h-100">
-                <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left" alt="...">
+              <div class="card h-100 product-info">
+                <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title product-name">Card title</h5>
                   <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <div class = "button-card-position d-inline">
-                    <button class = "btn btn-primary me-2">Купить</button>
-                    <span class="text-black"> <span class="text-black"> 459 &#8381;</span> / 1 шт.</span>
+                    <button class = "btn btn-primary me-2 add-button">Купить</button>
+                    <span class="text-black"> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100">
-                <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left" alt="...">
+              <div class="card h-100 product-info">
+                <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title product-name">Card title</h5>
                   <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <div class = "button-card-position d-inline">
-                    <button class = "btn btn-primary me-2">Купить</button>
-                    <span class="text-black"> <span class="text-black"> 459 &#8381;</span> / 1 шт.</span>
+                    <button class = "btn btn-primary me-2 add-button">Купить</button>
+                    <span class="text-black"> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100">
-                <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left" alt="...">
+              <div class="card h-100 product-info">
+                <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title product-name">Card title</h5>
                   <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                   <div class = "button-card-position d-inline">
-                    <button class = "btn btn-primary me-2">Купить</button>
-                    <span class="text-black"> <span class="text-black"> 459 &#8381;</span> / 1 шт.</span>
+                    <button class = "btn btn-primary me-2 add-button">Купить</button>
+                    <span class="text-black"> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100">
-                <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left" alt="...">
+              <div class="card h-100 product-info">
+                <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title
+                  <h5 class="card-title product-name">Card title
                   </h5>
                   <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                   <div class = "button-card-position d-inline">
-                    <button class = "btn btn-primary me-2">Купить</button>
-                    <span class="text-black"> <span class="text-black"> 459 &#8381;</span> / 1 шт.</span>
+                    <button class = "btn btn-primary me-2 add-button">Купить</button>
+                    <span class="text-black"> <span class="text-black">459 &#8381;</span> / 1 шт.</span>
                   </div>
                 </div>
               </div>
@@ -173,69 +177,71 @@
             </div>
             <div class="row row-cols-1  row-cols-md-2 row-cols-lg-4 g-4 mb-3">
               <div class="col">
-                <div class="card h-100">
-                  <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left" alt="...">
+                <div class="card h-100 product-info">
+                  <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><span class="badge rounded-pill bg-danger me-2">
+                    <h5 class="card-title product-name"><span class="badge rounded-pill bg-danger me-2">
                       <strong>NEW</strong>
                       <span class="visually-hidden">новый товар</span>
                     </span>Card title
                     </h5>
                     <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <div class = "button-card-position d-inline">
-                      <button class = "btn btn-primary me-2">Купить</button>
-                      <span class="text-black"> <span class="text-black"> 459 &#8381;</span> / 1 шт.</span>
+                      <button class = "btn btn-primary me-2 add-button">Купить</button>
+                      <span class="text-black"> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card h-100">
-                  <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left" alt="...">
+                <div class="card h-100 product-info">
+                  <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><span class="badge rounded-pill bg-danger me-2">
+                    <h5 class="card-title product-name"><span class="badge rounded-pill bg-danger me-2">
                       <strong>NEW</strong>
                       <span class="visually-hidden">новый товар</span>
                     </span>Card title
                     </h5>
                     <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <div class = "button-card-position d-inline">
-                      <button class = "btn btn-primary me-2">Купить</button>
-                      <span class="text-black"> <span class="text-black"> 459 &#8381;</span> / 1 шт.</span>
+                      <button class = "btn btn-primary me-2 add-button">Купить</button>
+                      <span class="text-black"> <span class="text-black price"> 459 &#8381;</span> / 1 шт.</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card h-100">
-                  <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left" alt="...">
+                <div class="card h-100 product-info">
+                  <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><span class="badge rounded-pill bg-danger me-2">
+                    <h5 class="card-title product-name"><span class="badge rounded-pill bg-danger me-2">
                       <strong>NEW</strong>
                       <span class="visually-hidden">новый товар</span>
                     </span>Card title
                     </h5>
                     <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                     <div class = "button-card-position d-inline">
-                      <button class = "btn btn-primary me-2">Купить</button>
-                      <span class="text-black"> <span class="text-black"> 459 &#8381;</span> / 1 шт.</span>
+                      <button class = "btn btn-primary me-2 add-button">Купить</button>
+                      <span class="text-black"> <span class="text-black price"> 459 &#8381;</span> / 1 шт.</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card h-100">
-                  <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left" alt="...">
+                <div class="card h-100 product-info">
+                  <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><span class="badge rounded-pill bg-danger me-2">
-                      <strong>NEW</strong>
-                      <span class="visually-hidden">новый товар</span>
-                    </span>Card title
+                    <h5 class="card-title product-name">
+                      <span class="badge rounded-pill bg-danger me-2">
+                        <strong>NEW</strong>
+                        <span class="visually-hidden">новый товар</span>
+                      </span>
+                      Card title
                     </h5>
                     <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                     <div class = "button-card-position d-inline">
-                      <button class = "btn btn-primary me-2">Купить</button>
-                      <span class="text-black"> <span class="text-black"> 459 &#8381;</span> / 1 шт.</span>
+                      <button class = "btn btn-primary me-2 add-button">Купить</button>
+                      <span class="text-black"> <span class="text-black price"> 459 &#8381;</span> / 1 шт.</span>
                     </div>
                   </div>
                 </div>
@@ -244,23 +250,39 @@
             </div>
             </div>
 
-        
+            <!--Modal-->
+            <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-white" id="orderModalLabel">Заголовок модального окна</h5>
+                    <button type="button" class="btn-close" fill="#fff" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                  </div>
+                  <div class="modal-body order-body text-white">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
         <!--shopping cart-->
-        <div class="shopping-cart">
-          <div class="px-4 px-lg-0">
+        <div class="shopping-cart" id="cart">
+          <div >
               <div class="pb-5">
                   <div class="container">
                       <div class = "row mb-2">
                         <span class = "fs-4 text-white">Корзина</span>
                       </div>
                       <div class="row">
-                          <div class="cart-table col-12 p-5 rounded shadow-sm mb-3">
+                          <div class="cart-table col-lg-12 rounded shadow-sm mb-3">
                               <div class="table-responsive">
                                   <table class="table">
                                       <thead>
-                                          <tr class="d-flex">
+                                          <tr >
                                               <th class="border-0 table-col col-4" scope="col">
                                                   <div class="p-2 px-3 text-uppercase text-white">Товар</div>
                                               </th>
@@ -275,43 +297,27 @@
                                               </th>
                                           </tr>
                                       </thead>
-                                      <tbody>
-                                          <tr>
-                                              <th class="" scope="row">
-                                                  <div class="p-2"><img class="img-fluid rounded shadow-sm" src="/Gametrade/pages/assets/dota_boost_slider.jpg" alt width="70" />
-                                                      <div class="ml-3 d-inline-block align-middle">
-                                                          <h5 class="mb-0 ps-2"><a class="text-white d-inline-block align-middle text-decoration-none">Product Name</a></h5>
-                                                      </div>
+                                      <tbody class = "table-body">
+                                        <tr class = "table-another-row d-none" id = "cloning-row">
+                                          <td class="" scope="row">
+                                              <div class="p-2"><img class="img-fluid rounded shadow-sm" src="" alt width="70" />
+                                                  <div class="ml-3 d-inline-block align-middle">
+                                                      <h5 class="mb-0 ps-2"><a class="text-white d-inline-block align-middle text-decoration-none"></a></h5>
                                                   </div>
-                                              </th>
-                                              <td class="align-middle text-white"><strong>479.00 &#8381;</strong></td>
-                                              <td class="align-middle text-white"><button class = "btn"><i class="fa fa-minus text-white"></i></button><input class = "cart-quantity" type = "text" onkeypress='validate(event)'  value="3"><button class = "btn"><i class="fa fa-plus text-white"></i></button></td>
-                                              <td class="align-middle"><a class="text-white" ><i class="fa fa-trash"></i></a></td>
-                                          </tr>
-                                          <tr>
-                                              <th scope="row">
-                                                  <div class="p-2"><img class="img-fluid rounded shadow-sm" src="/Gametrade/pages/assets/dota_boost_slider.jpg" alt width="70" />
-                                                      <div class="ml-3 d-inline-block align-middle">
-                                                          <h5 class="mb-0 ps-2"><a class="text-white d-inline-block text-decoration-none">Product Name</a></h5>
-                                                      </div>
-                                                  </div>
-                                              </th>
-                                              <td class="align-middle text-white"><strong>479.00 &#8381;</strong></td>
-                                              <td class="align-middle text-white"><button class = "btn"><i class="fa fa-minus text-white"></i></button><input class = "cart-quantity" type = "text" onkeypress='validate(event)'  value="3"><button class = "btn"><i class="fa fa-plus text-white"></i></button></td>
-                                              <td class="align-middle"><a class="text-white" ><i class="fa fa-trash"></i></a></td>
-                                          </tr>
-                                          <tr>
-                                              <th scope="row">
-                                                  <div class="p-2"><img class="img-fluid rounded shadow-sm" src="/Gametrade/pages/assets/dota_boost_slider.jpg" alt width="70" />
-                                                      <div class="ml-3 d-inline-block align-middle">
-                                                          <h5 class="mb-0 ps-2"><a class="text-white d-inline-block text-decoration-none" >Product Name</a></h5>
-                                                      </div>
-                                                  </div>
-                                              </th>
-                                              <td class="align-middle text-white"><strong>479.00 &#8381;</strong></td>
-                                              <td class="align-middle text-white"><button class = "btn"><i class="fa fa-minus text-white"></i></button><input class = "cart-quantity" type = "text" onkeypress='validate(event)'  value="3"><button class = "btn"><i class="fa fa-plus text-white"></i></button></td>
-                                              <td class="align-middle"><a class="text-white" href="#"><i class="fa fa-trash"></i></a></td>
-                                          </tr>
+                                              </div>
+                                          </td>
+                                          <td class="align-middle text-white"><strong class = "price"></strong></td>
+                                          <td class="quantity-td align-middle text-white">
+                                            <button class = "btn minus">
+                                              <i class="fa fa-minus text-white"></i>
+                                            </button>
+                                            <span class="cart-quantity text-white">1</span>
+                                            <button class = "btn plus">
+                                              <i class="fa fa-plus text-white"></i>
+                                            </button>
+                                          </td>
+                                          <td class="align-middle"><button class="btn text-white remove"><i class="fa fa-trash"></i></button></td>
+                                        </tr>
                                       </tbody>
                                     </table>
                               </div>
@@ -321,15 +327,15 @@
                           <div class = "col-lg-12 d-flex justify-content-between align-middle">
                             <div class = "total-cost-info-block d-flex align-items-center">
                               <strong class="text-white me-2">Total:</strong>
-                              <span class = "total-price text-white">1437 &#8381;</span>
+                              <span class = "total-price text-white">0 &#8381;</span>
                             </div>
-                            <button class="btn btn-primary" type="button">Оформить заказ</button>
+                            <button class="btn btn-primary complete-order" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Оформить заказ</button>
                           </div>
                       </div>
                   </div>
               </div>
           </div>
-
+          
 
 
         
@@ -349,7 +355,8 @@
               <div class="col-xl-2 col-12 mb-md-0 mb-3">
                 <h5 class = "text-muted">Полезное</h5>
                 <ul class="nav flex-column">
-                  <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white">Магазин</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Главная</a></li>
+                  <li class="nav-item mb-2"><a href="catalog.html" class="nav-link p-0 text-white">Каталог</a></li>
                   <li class="nav-item mb-2"><a href="faq.html" class="nav-link p-0 text-white">FAQ</a></li>
                   <li class="nav-item mb-2"><a href="aboutUs.html" class="nav-link p-0 text-white">О компании</a></li>
                   <li class="nav-item mb-2"><a href="userAgreement.html" class="nav-link p-0 text-white">Пользовательское соглашение</a></li>
@@ -364,7 +371,7 @@
                   <div class="d-flex w-100 gap-2">
                     <label for="newsletter1" class="visually-hidden">Email address</label>
                     <input id="newsletter1" type="text" class="form-control" placeholder="Ваш e-mail">
-                    <button class="btn btn-primary" type="button">Подписаться</button>
+                    <button class="btn btn-primary subscribe-button" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Подписаться</button>
                   </div>
                 </form>
               </div>
@@ -383,6 +390,11 @@
         </div>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
           <script src="https://kit.fontawesome.com/b34a51bf50.js" crossorigin="anonymous"></script>
-          <script src="/Gametrade/scripts/validate.js" ></script>
+          <script src="/Gametrade/scripts/store.js" async></script>
+          <script src="/Gametrade/scripts/subscribe.js" async></script>
+          <script 
+          src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+          integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+          crossorigin="anonymous"></script>
     </body>
 </html>

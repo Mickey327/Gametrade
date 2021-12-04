@@ -6,6 +6,8 @@ body{
     --unhover-nav-color: rgb(204,204,204);
     --hover-nav-color:rgb(255,255,255);
     --table-header-color: rgb(65,65,65);
+    --sticky-bar-icons-color: #353b48;
+    --accordion-inner-color:rgb(50,50,50);
     font-family: 'Ubuntu', sans-serif !important;
     background: var(--main-bg-color) !important;
 }
@@ -217,6 +219,8 @@ body{
 }
 .cart-table{
     background-color: var(--main-dark-color) !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 .table-col{
     background-color: var(--table-header-color) !important;
@@ -225,5 +229,40 @@ body{
     background-color: var(--main-dark-color) !important;
 }
 .cart-quantity{
-    width:50px;
+    width:20%;
+}
+.price{
+    white-space: nowrap;
+}
+
+.fa-cart-arrow-down{
+    color:rgb(108,117,125);
+}
+.fa-cart-arrow-down:hover{
+    color:white;
+}
+.modal-content{
+    background-color: var(--main-dark-color) !important;
+    
+}
+.modal-header{
+    border-bottom: 1px solid var(--table-header-color) !important;
+}
+.modal-footer{
+    border-top: 1px solid var(--table-header-color) !important;
+}
+.btn-close{
+    color:white !important;
+    background: transparent url("/Gametrade/pages/assets/modalCross.svg") center/1em auto no-repeat !important;
+}
+.accordion-button{
+    background-color:var(--table-header-color) !important;
+    color: white !important;
+}
+.accordion-body{
+    background-color:var(--accordion-inner-color) !important;
+    color: white !important;
+}
+.accordion-button::after{
+    background: transparent url("/Gametrade/pages/assets/arrow-down.svg") center/1em auto no-repeat !important;
 }
