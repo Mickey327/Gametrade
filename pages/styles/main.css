@@ -117,10 +117,12 @@ body{
     margin-bottom: auto;
     margin-top: auto;
     height: 60px;
-    background-color: #353b48;
+    background-color: var(--sticky-bar-icons-color);
     border-radius: 30px;
     padding: 10px;
     width: auto !important;
+    position: relative;
+    display: block;
   }
   
 .search-input {
@@ -265,4 +267,20 @@ body{
 }
 .accordion-button::after{
     background: transparent url("/Gametrade/pages/assets/arrow-down.svg") center/1em auto no-repeat !important;
+}
+.search-result{
+    z-index: 9999;
+    position: absolute;
+    left:0;
+}
+
+.search-ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 30%) 0px 5px 10px;
+    background: var(--sticky-bar-icons-color);
+    text-align: center;
 }

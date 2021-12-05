@@ -39,7 +39,7 @@ function plusQuantity(){
     addButton.closest('.table-another-row').find('.price').text(newPrice + " ₽");
     addButton.closest('.page-body').find('.total-price').text(newTotalPrice+" ₽");
 }
-$('.add-button').click(function(){
+function addProduct(){
     let addProductButton = $(this);
     let productImageSrc = addProductButton.closest('.product-info').find('.product-image').attr('src');
     let productCost = addProductButton.closest('.product-info').find('.price').text().trim().split(" ")[0];
@@ -66,7 +66,8 @@ $('.add-button').click(function(){
     document.getElementsByClassName('table-body')[0].appendChild(newRow);
     
     
-});
+}
+$('.add-button').click(addProduct);
 $('.complete-order').click(function(){
     let amountOfRows = $(this).closest('.container').find('.table-body tr').length;
     let modalTitle;
@@ -82,3 +83,41 @@ $('.complete-order').click(function(){
         
     }
 });
+$('.search-input').on('input',function(e)
+{ 
+    
+    let productName = $(this).val();
+    var copyNode = document.getElementById("search-product-listing").cloneNode(true);
+    $('.search-ul li').remove();
+    document.getElementsByClassName("search-ul")[0].appendChild(copyNode);
+
+    $.getJSON("/Gametrade/pages/assets/products.json", function (data) {
+        for (let i = 0; i < data.products.length; i++){
+            
+            let name = data.products[i].name.toLowerCase();
+            if (name.indexOf(productName.toLowerCase()) == 0 && productName != ""){
+                let productPrice = data.products[i].price;
+                let productImage = data.products[i].image;
+                var ListNode = document.getElementById('search-product-listing').cloneNode(true)
+
+                ListNode.classList.remove("d-none");
+                ListNode.getElementsByClassName("product-image")[0].src = productImage;
+                ListNode.getElementsByClassName("price")[0].innerHTML = productPrice + " ₽";
+                ListNode.getElementsByClassName("search-name")[0].innerHTML = data.products[i].name;
+                $(ListNode.getElementsByClassName("add-button")[0]).click(addProduct);
+                document.getElementsByClassName('search-ul')[0].appendChild(ListNode);
+        
+            }
+            if ($('.search-ul li').length > 1){
+                $('.search-result').removeClass("d-none");
+            }
+            else
+            {
+                $('.search-result').addClass("d-none");
+            }
+            
+        
+        }
+          });
+});
+

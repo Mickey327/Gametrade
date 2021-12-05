@@ -38,11 +38,23 @@
         <div class = "container-xxl px-2 sticky-top sticky-search">
           <div class="row mb-3 align-items-center">
             <div class = "col-md-4 col-10 py-2">
-              <div class = "searchbar">
+              <div class = "searchbar d-block">
                 <input type="text" class="fs-5 search-input" placeholder="Search..." autofocus>
                 <a class="search-icon" href="#">
                   <i class="fas fa-search"></i>
                 </a>
+              </div>
+              <div class = "search-result d-none col-md-5 col-12 mt-0">
+                <ul class = "search-ul px-0 ms-2">
+                  <li class = "search-li mb-2 d-none" id="search-product-listing">
+                    <div class = "search-product product-info d-flex justify-content-between align-items-center">
+                      <img src="assets/mortal-kombat-11.jpg" class="product-image" width="70">
+                      <a class = "search-name product-name text-decoration-none text-white">product</a>
+                      <span class = "text-white price mx-2">499 ₽</span>
+                      <button class = "btn btn-primary me-2 add-button">Купить</button>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class = "col-2">
@@ -61,16 +73,16 @@
             <div class="row row-cols-1  row-cols-md-2 row-cols-lg-4 g-4 mb-3">
               <div class="col">
                 <div class="card h-100 product-info">
-                  <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
+                  <img src="/Gametrade/pages/assets/wow_gold.jpg" class="card-img-left product-image" alt="...">
                   <div class="card-body">
                     <h5 class="card-title product-name"><span class="badge rounded-pill bg-warning me-2">
                       <strong>SALE</strong>
                       <span class="visually-hidden">товар по скидке</span>
-                    </span>Card title</h5>
-                    <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </span>Золото WoW</h5>
+                    <p class="card-text d-xl-block d-none">Теперь вы можете приобрести золото по заниженной цене в честь приближающихся праздников.</p>
                     <div class = "button-card-position d-inline">
                       <button class = "btn btn-primary me-2 add-button">Купить</button>
-                      <span class="text-black"> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
+                      <span class="text-black"> <span class ="old-cost text-muted me-1">4 &#8381;</span> <span class="text-black price">3 &#8381;</span> / 1000 золота</span>
                     </div>
                   </div>
                 </div>
@@ -82,114 +94,141 @@
                     <h5 class="card-title product-name"><span class="badge rounded-pill bg-warning me-2">
                       <strong>SALE</strong>
                       <span class="visually-hidden">товар по скидке</span>
-                    </span>Card title</h5>
-                    <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </span>Буст MMR Dota 2</h5>
+                    <p class="card-text d-xl-block d-none">Хотите испытать себя на более высоком рейтинге? Покупайте буст по низким ценам.</p>
                     <div class = "button-card-position d-inline">
                       <button class = "btn btn-primary me-2 add-button">Купить</button>
-                      <span class="text-black"> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
+                      <span class="text-black"> <span class ="old-cost text-muted me-1">350 &#8381;</span> <span class="text-black price">250 &#8381;</span> / 100 MMR</span>
                     </div>
                   </div>
                 </div>
               </div>
             <div class="col">
               <div class="card h-100 product-info">
-                <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
+                <img src="/Gametrade/pages/assets/random_covert_csgo_carousel.jpg" class="card-img-left product-image" alt="...">
                 <div class="card-body">
                   <h5 class="card-title product-name"><span class="badge rounded-pill bg-warning me-2">
                     <strong>SALE</strong>
                     <span class="visually-hidden">товар по скидке</span>
-                  </span>Card title</h5>
-                  <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </span>Случайное тайное оружие</h5>
+                  <p class="card-text d-xl-block d-none">Хотите посмотреть насколько вы везунчик? Испытайте свою удачу, купив тайное оружие по низкой цене.</p>
                   <div class = "button-card-position d-inline">
                     <button class = "btn btn-primary me-2 add-button">Купить</button>
-                    <span class="text-black"> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
+                    <span class="text-black"> <span class ="old-cost text-muted me-1">599 &#8381;</span> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100 product-info">
-                <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title product-name"><span class="badge rounded-pill bg-danger me-2">
-                    <strong>NEW</strong>
-                    <span class="visually-hidden">новый товар</span>
-                  </span>Card title</h5>
-                  <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class = "button-card-position d-inline">
-                    <button class = "btn btn-primary me-2 add-button">Купить</button>
-                    <span class="text-black"> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
-                  </div>
-                </div>
-              </div>
-              </div>
-              <div class="col">
                 <div class="card h-100 product-info">
-                  <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
+                  <img src="/Gametrade/pages/assets/battlefield.jpg" class="card-img-left product-image" alt="...">
                   <div class="card-body">
                     <h5 class="card-title product-name"><span class="badge rounded-pill bg-danger me-2">
                       <strong>NEW</strong>
                       <span class="visually-hidden">новый товар</span>
-                    </span>Card title</h5>
-                    <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </span>Battlefield 2042
+                    </h5>
+                    <p class="card-text d-xl-block d-none">Компьютерная игра в жанре шутера от первого лица, разработанная шведской компанией DICE и изданная компанией Electronic Arts.</p>
                     <div class = "button-card-position d-inline">
                       <button class = "btn btn-primary me-2 add-button">Купить</button>
-                      <span class="text-black"> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
+                      <span class="text-black"> <span class="text-black price">1899 &#8381;</span> / 1 шт.</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card h-100 product-info">
-                  <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
+                  <img src="/Gametrade/pages/assets/forza-horizon-5.jpg" class="card-img-left product-image" alt="...">
                   <div class="card-body">
                     <h5 class="card-title product-name"><span class="badge rounded-pill bg-danger me-2">
                       <strong>NEW</strong>
                       <span class="visually-hidden">новый товар</span>
-                    </span>Card title</h5>
-                    <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </span>Forza Horizon 5</h5>
+                    <p class="card-text d-xl-block d-none">Компьютерная игра в жанре аркадного гоночного симулятора. В качестве разработчика выступает компания Playground Games.</p>
                     <div class = "button-card-position d-inline">
                       <button class = "btn btn-primary me-2 add-button">Купить</button>
-                      <span class="text-black"> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
+                      <span class="text-black"> <span class="text-black price"> 2149 &#8381;</span> / 1 шт.</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card h-100 product-info">
-                  <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
+                  <img src="/Gametrade/pages/assets/watch-dogs-legion.jpg" class="card-img-left product-image" alt="...">
                   <div class="card-body">
                     <h5 class="card-title product-name"><span class="badge rounded-pill bg-danger me-2">
                       <strong>NEW</strong>
                       <span class="visually-hidden">новый товар</span>
-                    </span>Card title</h5>
-                    <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </span>Watch Dogs: Legion</h5>
+                    <p class="card-text d-xl-block d-none">Компьютерная игра в жанре Action-adventure, разработанная Ubisoft Toronto и издаваемая Ubisoft. Это третья часть серии Watch Dogs и продолжение Watch Dogs 2.</p>
                     <div class = "button-card-position d-inline">
                       <button class = "btn btn-primary me-2 add-button">Купить</button>
-                      <span class="text-black"> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
+                      <span class="text-black"> <span class="text-black price"> 999 &#8381;</span> / 1 шт.</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card h-100 product-info">
-                  <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
+                  <img src="/Gametrade/pages/assets/cyberpunk.jpg" class="card-img-left product-image" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title product-name">Card title</h5>
-                    <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title product-name"><span class="badge rounded-pill bg-danger me-2">
+                      <strong>NEW</strong>
+                      <span class="visually-hidden">новый товар</span>
+                    </span>Cyberpunk 2077</h5>
+                    <p class="card-text d-xl-block d-none">Компьютерная игра в жанре экшен в открытом мире, разработанная и изданная польской студией CD Projekt.</p>
                     <div class = "button-card-position d-inline">
                       <button class = "btn btn-primary me-2 add-button">Купить</button>
-                      <span class="text-black"> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
+                      <span class="text-black"> <span class="text-black price">1999 &#8381;</span> / 1 шт.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 product-info">
+                  <img src="/Gametrade/pages/assets/destiny.jpg" class="card-img-left product-image" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title product-name">Destiny</h5>
+                    <p class="card-text d-xl-block d-none">Компьютерная игра в жанре шутера от первого лица, разработанная компанией Bungie и изданная Activision.</p>
+                    <div class = "button-card-position d-inline">
+                      <button class = "btn btn-primary me-2 add-button">Купить</button>
+                      <span class="text-black"> <span class="text-black price">259 &#8381;</span> / 1 шт.</span>
                     </div>
                   </div>
                 </div>
                 </div>
                 <div class="col">
                   <div class="card h-100 product-info">
-                    <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
+                    <img src="/Gametrade/pages/assets/halo-5-guardians-game-wallpaper_1680x1050.jpg" class="card-img-left product-image" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title product-name">Card title</h5>
-                      <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h5 class="card-title product-name">Halo 5</h5>
+                      <p class="card-text d-xl-block d-none">Видеоигра в жанре шутер от первого лица, разработанная американской компанией 343 Industries.</p>
+                      <div class = "button-card-position d-inline">
+                        <button class = "btn btn-primary me-2 add-button">Купить</button>
+                        <span class="text-black"> <span class="text-black price">1259 &#8381;</span> / 1 шт.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 product-info">
+                    <img src="/Gametrade/pages/assets/Call_Of_Duty.jpg" class="card-img-left product-image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title product-name">Call of Duty: Black Ops 4</h5>
+                      <p class="card-text d-xl-block d-none">Компьютерная игра в жанре шутера от первого лица, пятнадцатая во франшизе Call of Duty и четвёртая основная игра в сюжетной подсерии Black Ops.</p>
+                      <div class = "button-card-position d-inline">
+                        <button class = "btn btn-primary me-2 add-button">Купить</button>
+                        <span class="text-black"> <span class="text-black price">700 &#8381;</span> / 1 шт.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 product-info">
+                    <img src="/Gametrade/pages/assets/Dishonored.jpg" class="card-img-left product-image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title product-name">Dishonored</h5>
+                      <p class="card-text d-xl-block d-none">Компьютерная игра в жанре стелс-экшен от первого лица с элементами RPG, разработанная французской компанией Arkane Studios и изданная Bethesda Softworks.</p>
                       <div class = "button-card-position d-inline">
                         <button class = "btn btn-primary me-2 add-button">Купить</button>
                         <span class="text-black"> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
@@ -199,91 +238,65 @@
                 </div>
                 <div class="col">
                   <div class="card h-100 product-info">
-                    <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
+                    <img src="/Gametrade/pages/assets/The-Outer-Worlds.jpg" class="card-img-left product-image" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title product-name">Card title</h5>
-                      <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h5 class="card-title product-name">The Outer Worlds</h5>
+                      <p class="card-text d-xl-block d-none">Компьютерная ролевая игра с видом от первого лица, разработанная американской компанией Obsidian Entertainment.</p>
                       <div class = "button-card-position d-inline">
                         <button class = "btn btn-primary me-2 add-button">Купить</button>
-                        <span class="text-black"> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100 product-info">
-                    <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title product-name">Card title</h5>
-                      <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class = "button-card-position d-inline">
-                        <button class = "btn btn-primary me-2 add-button">Купить</button>
-                        <span class="text-black"> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100 product-info">
-                    <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title product-name">Card title</h5>
-                      <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class = "button-card-position d-inline">
-                        <button class = "btn btn-primary me-2 add-button">Купить</button>
-                        <span class="text-black"> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
+                        <span class="text-black"> <span class="text-black price">759 &#8381;</span> / 1 шт.</span>
                       </div>
                     </div>
                   </div>
                   </div>
                   <div class="col">
                     <div class="card h-100 product-info">
-                      <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
+                      <img src="/Gametrade/pages/assets/games-sekiro-shadows-die-twice.jpg" class="card-img-left product-image" alt="...">
                       <div class="card-body">
-                        <h5 class="card-title product-name">Card title</h5>
-                        <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title product-name">Sekiro: Shadows Die Twice</h5>
+                        <p class="card-text d-xl-block d-none">Компьютерная игра в жанре Action-adventure, разработанная японской компанией FromSoftware и изданная Activision.</p>
                         <div class = "button-card-position d-inline">
                           <button class = "btn btn-primary me-2 add-button">Купить</button>
-                          <span class="text-black"> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
+                          <span class="text-black"> <span class="text-black price">900 &#8381;</span> / 1 шт.</span>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col">
                     <div class="card h-100 product-info">
-                      <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
+                      <img src="/Gametrade/pages/assets/borderlands-borderlands-3-mayhem-is-coming-bl3-psycho-roses.jpg" class="card-img-left product-image" alt="...">
                       <div class="card-body">
-                        <h5 class="card-title product-name">Card title</h5>
-                        <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title product-name">Аккаунт с Borderlands 3</h5>
+                        <p class="card-text d-xl-block d-none">Компьютерная игра в жанре шутера от первого лица с элементами RPG, разработанная американской студией Gearbox Software.</p>
                         <div class = "button-card-position d-inline">
                           <button class = "btn btn-primary me-2 add-button">Купить</button>
-                          <span class="text-black"> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
+                          <span class="text-black"> <span class="text-black price">199 &#8381;</span> / 1 шт.</span>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col">
                     <div class="card h-100 product-info">
-                      <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
+                      <img src="/Gametrade/pages/assets/God-Of-War-Ascension-Kratos-Hd-Games-Wallpapers-Style.jpg" class="card-img-left product-image" alt="...">
                       <div class="card-body">
-                        <h5 class="card-title product-name">Card title</h5>
-                        <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title product-name">God of War: Ascension</h5>
+                        <p class="card-text d-xl-block d-none">Видеоигра от третьего лица в жанре action-adventure, разработанная студией Santa Monica Studio и опубликованная Sony Computer Entertainment.</p>
                         <div class = "button-card-position d-inline">
                           <button class = "btn btn-primary me-2 add-button">Купить</button>
-                          <span class="text-black"> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
+                          <span class="text-black"> <span class="text-black price">699 &#8381;</span> / 1 шт.</span>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col">
                     <div class="card h-100 product-info">
-                      <img src="/Gametrade/pages/assets/dota_boost_slider.jpg" class="card-img-left product-image" alt="...">
+                      <img src="/Gametrade/pages/assets/middle_earth__shadow_of_mordor_2014-wide.jpg" class="card-img-left product-image" alt="...">
                       <div class="card-body">
-                        <h5 class="card-title product-name">Card title</h5>
-                        <p class="card-text d-xl-block d-none">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title product-name">Middle-earth: Shadow of Mordor</h5>
+                        <p class="card-text d-xl-block d-none">Мультиплатформенная компьютерная игра в жанре Action/RPG, разработанная Monolith Productions и изданная Warner Bros. Interactive Entertainment.</p>
                         <div class = "button-card-position d-inline">
                           <button class = "btn btn-primary me-2 add-button">Купить</button>
-                          <span class="text-black"> <span class="text-black price">459 &#8381;</span> / 1 шт.</span>
+                          <span class="text-black"> <span class="text-black price">599 &#8381;</span> / 1 шт.</span>
                         </div>
                       </div>
                     </div>
@@ -363,10 +376,10 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="orderModalLabel">Заголовок модального окна</h5>
+                  <h5 class="modal-title text-white" id="orderModalLabel">Заголовок модального окна</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 </div>
-                <div class="modal-body order-body">
+                <div class="modal-body order-body text-white">
                   ...
                 </div>
                 <div class="modal-footer">
@@ -417,13 +430,14 @@
            </footer>
          </div>
         </div>
+        
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
           <script src="https://kit.fontawesome.com/b34a51bf50.js" crossorigin="anonymous"></script>
           <script src="/Gametrade/scripts/subscribe.js" async></script>
           <script src="/Gametrade/scripts/store.js" async></script>
-          <script 
-          src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-          integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-          crossorigin="anonymous"></script>
+          <script
+           src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
     </body>
 </html>
