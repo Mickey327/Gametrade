@@ -287,3 +287,6 @@ body{
 .add-button{
     border-radius: 16px !important;
 }
+.search-name{
+    width: 90px;
+}
