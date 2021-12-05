@@ -284,3 +284,6 @@ body{
     background: var(--sticky-bar-icons-color);
     text-align: center;
 }
+.add-button{
+    border-radius: 16px !important;
+}
