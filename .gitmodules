@@ -1,6 +1,7 @@
-[submodule "rcsp-backend"]
-	path = server
-	url = https://github.com/Mickey327/rcsp-backend
-[submodule "rcsp"]
+
+[submodule "client"]
 	path = client
 	url = https://github.com/Mickey327/rcsp
+[submodule "server"]
+	path = server
+	url = https://github.com/Mickey327/rcsp-backend
