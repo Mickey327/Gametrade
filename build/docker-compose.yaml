@@ -36,6 +36,8 @@ services:
     restart: always
     ports:
       - "${CLIENT_PORT}:${CLIENT_PORT}"
+    volumes:
+      - ../client:/app
 
 
 volumes:
