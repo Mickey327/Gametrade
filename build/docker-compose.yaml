@@ -1,17 +1,19 @@
 services:
-  postgres:
-    image: postgres:latest
-    container_name: database
-    environment:
-      - POSTGRES_DB=${DB_NAME}
-      - POSTGRES_USER=${DB_USER}
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
-    networks:
-      - backend
+  client:
+    env_file: .env
+    image: gametrade/client:v1
+    build:
+      context: ../client
+      dockerfile: Dockerfile
+    container_name: client
+    restart: always
     ports:
-      - "${DB_PORT}:${DB_PORT}"
+      - "${CLIENT_PORT}:${CLIENT_PORT}"
+    links:
+      - postgres
+      - server
     volumes:
-      - data:/var/lib/postgresql/data
+      - ../client:/app
 
   server:
     env_file: .env
@@ -30,22 +32,19 @@ services:
     volumes:
       - ../server/static:/app/static
 
-  client:
-    env_file: .env
-    image: gametrade/client:v1
-    build:
-      context: ../client
-      dockerfile: Dockerfile
-    container_name: client
-    restart: always
+  postgres:
+    image: postgres:latest
+    container_name: database
+    environment:
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    networks:
+      - backend
     ports:
-      - "${CLIENT_PORT}:${CLIENT_PORT}"
-    links:
-      - postgres
-      - server
+      - "${DB_PORT}:${DB_PORT}"
     volumes:
-      - ../client:/app
-
+      - data:/var/lib/postgresql/data
 
 volumes:
   data:
