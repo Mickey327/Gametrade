@@ -40,6 +40,9 @@ services:
     restart: always
     ports:
       - "${CLIENT_PORT}:${CLIENT_PORT}"
+    links:
+      - postgres
+      - server
     volumes:
       - ../client:/app
 
